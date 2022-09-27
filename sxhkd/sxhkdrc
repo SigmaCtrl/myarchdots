@@ -1,0 +1,50 @@
+#Brave 
+alt + b
+	brave
+
+#files 
+alt + f
+	thunar
+	
+#screenrecorder 
+alt + s
+	simplescreenrecorder --start-recording
+	
+#firefox browser  
+alt + w
+	firefox
+	
+#volume settings 
+alt + v
+	pavucontrol
+	
+#applauncher
+alt + p
+	rofi -show run
+	
+#music
+alt + m
+	st -e mocp
+
+#network
+alt + n
+	nm-connection-editor
+	
+#geany
+alt + g
+	geany
+	
+# Change volume
+XF86Audio{Raise,Lower}Volume
+    pactl set-sink-volume @DEFAULT_SINK@ {+,-}5%
+
+XF86AudioMute
+    pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+# Change screen brightness
+XF86MonBrightness{Up,Down}
+    light -{A,U} 5
+   
+# Lockscreen   
+ctrl + alt + l     
+ betterlockscreen -l
